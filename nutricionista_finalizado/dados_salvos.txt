@@ -1,0 +1,4 @@
+Nome: vitoria, Idade: 18, Peso: 70.0, Altura: 1.69
+Nome: vivi, Idade: 18, Peso: 70.0, Altura: 1.7
+Nome: vivi, Idade: 18, Peso: 70.0, Altura: 1.7
+Nome: vitoria, Idade: 18, Peso: 70.0, Altura: 70.0

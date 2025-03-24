@@ -374,7 +374,7 @@
      <string>DIETAS</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_card">
+   <widget class="QLabel" name="label_card_primeiro">
     <property name="geometry">
      <rect>
       <x>60</x>
@@ -646,7 +646,7 @@
      <x>0</x>
      <y>0</y>
      <width>1190</width>
-     <height>21</height>
+     <height>26</height>
     </rect>
    </property>
   </widget>

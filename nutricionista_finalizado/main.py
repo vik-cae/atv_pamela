@@ -1,28 +1,54 @@
 import sys
-
 import shutil
 shutil.rmtree('__pycache__', ignore_errors=True)
 from PyQt5 import uic
-from PyQt5.QtWidgets import QMainWindow, QApplication, QLabel,QMessageBox
+from PyQt5.QtWidgets import QMainWindow, QApplication, QLabel, QMessageBox
 from PyQt5.QtGui import QPixmap
 from login import Ui_MainWindow as Ui_Login  # Interface da janela de login
 from ui_finalizado import Ui_Form as Ui_Finalizado
 
-
-
 class JanelaFinalizada(QMainWindow):
     """ Segunda janela (tela final) """
-    def __init__(self):
+    def __init__(self, peso, altura):
         super().__init__()
         self.ui = Ui_Finalizado()
         self.ui.setupUi(self)
+
+        # Exibir peso e altura capturados na tela anterior
+        self.ui.label_peso_tela_inicial.setText(f"{peso} kg")
+        self.ui.label_altura_tela_iicial.setText(f"{altura} m")
+
+        # Calcular IMC
+        imc = peso / (altura ** 2)
+        self.ui.label_imc_tela_inicial_meio.setText(f"IMC: {imc:.2f}")  # Exibir IMC com duas casas decimais
+
+        # Definir imagens nos QLabel
+        self.carregar_imagens()
+
+    def carregar_imagens(self):
+        """ Define as imagens nos QLabel da interface """
+        imagens = {
+            self.ui.label_card: "./imagens/card-suco.png",
+            self.ui.label_card_2: "./imagens/card-salda.png",
+            self.ui.label_vector_circulo: "./imagens/circulo-verde.png",
+            self.ui.label_vector_2: "./imagens/direita-vector.png",
+            self.ui.label_vector: "./imagens/esquerda-vector.png",
+            self.ui.label_cabecalho: "./imagens/onda-cima.png",
+            self.ui.label_2: "./imagens/nutrir-se-bem.png",
+            self.ui.label_foto: "./imagens/imagem-lembrete.png",
+            self.ui.label_onda: "./imagens/onda-meio.png",
+            self.ui.label_vector_linhas: "./imagens/Group 20.png",
+            self.ui.label_vector_linhas_2: "./imagens/Group 20.png",
+            #self.ui.label_card_primeiro: "./imagens/Group 18.png",
+        }
+        for label, img_path in imagens.items():
+            label.setPixmap(QPixmap(img_path))
+
 
 class JanelaLogin(QMainWindow):
     """ Janela de login """
     def __init__(self):
         super().__init__()
-
-        # Carregar a interface do designer
         self.ui = Ui_Login()
         self.ui.setupUi(self)
 
@@ -56,36 +82,12 @@ class JanelaLogin(QMainWindow):
         with open("dados_salvos.txt", "a") as file:
             file.write(f"Nome: {nome}, Idade: {idade}, Peso: {peso}, Altura: {altura}\n")
 
-        # Abrir a segunda janela
-        self.janela_finalizada = JanelaFinalizada()
+        # Abrir a segunda janela e passar os valores para cálculo do IMC
+        self.janela_finalizada = JanelaFinalizada(peso, altura)
         self.janela_finalizada.show()
 
         # Fechar a tela de login
         self.close()
-
-        
-
-
-    #def __init__(self):
-        ####super().__init__()
-        
-        # Carregar a interface do designer (arquivo .ui)
-        # Se você estiver usando o arquivo .ui diretamente:
-        #####self.ui = uic.loadUi("login.ui", self)
-        
-        # Ou se converteu para Python:
-        # from seu_arquivo_ui import Ui_MainWindow
-        # self.ui = Ui_MainWindow()
-        # self.ui.setupUi(self)
-        
-        # Definir a imagem para um QLabel (assumindo que você tem um QLabel chamado 'label_imagem')
-        ####pixmap = QPixmap("./imagens/fundo-login.png")
-        #####self.ui.label.setPixmap(pixmap)
-        # Você pode redimensionar a imagem se necessário
-        # self.ui.label_imagem.setScaledContents(True)
-        
-        ####self.show()
-
 
 
 if __name__ == "__main__":
@@ -93,5 +95,3 @@ if __name__ == "__main__":
     window = JanelaLogin()
     window.show()
     sys.exit(app.exec_())
-
-

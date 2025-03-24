@@ -18,9 +18,12 @@ class JanelaFinalizada(QMainWindow):
         self.ui.label_peso_tela_inicial.setText(f"{peso} kg")
         self.ui.label_altura_tela_iicial.setText(f"{altura} m")
 
+        print(peso, altura)
         # Calcular IMC
         imc = peso / (altura ** 2)
-        self.ui.label_imc_tela_inicial_meio.setText(f"IMC: {imc:.2f}")  # Exibir IMC com duas casas decimais
+        resultado = imc *10000
+        print(imc)
+        self.ui.label_imc_tela_inicial_meio.setText(f"IMC: {resultado:.2f}")  # Exibir IMC com duas casas decimais
 
         # Definir imagens nos QLabel
         self.carregar_imagens()

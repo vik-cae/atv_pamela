@@ -107,7 +107,9 @@ class Ui_Form(object):
         self.label_vector_circulo.setObjectName("label_vector_circulo")
         self.label_imc_tela_inicial_meio = QtWidgets.QLabel(self.widget)
         self.label_imc_tela_inicial_meio.setGeometry(QtCore.QRect(370, 130, 141, 101))
-        self.label_imc_tela_inicial_meio.setText("")
+        self.label_imc_tela_inicial_meio.setStyleSheet("font-size:24px")
+        
+        self.label_imc_tela_inicial_meio.setText("aaaaaa")
         self.label_imc_tela_inicial_meio.setObjectName("label_imc_tela_inicial_meio")
         self.label_vector_2 = QtWidgets.QLabel(self.widget)
         self.label_vector_2.setGeometry(QtCore.QRect(570, 130, 291, 51))
@@ -246,12 +248,12 @@ class Ui_Form(object):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
         self.label_nutri.setText(_translate("Form", "NutriFácil"))
-        self.label_dieta.setText(_translate("Form", "DIETAS"))
-        self.label_dicas.setText(_translate("Form", "DICAS"))
+        # self.label_dieta.setText(_translate("Form", "DIETAS"))
+        # self.label_dicas.setText(_translate("Form", "DICAS"))
         self.label_peso.setText(_translate("Form", "PESO :"))
         self.label_altura.setText(_translate("Form", "ALTURA : "))
-        self.label_dicas_tela_inicial.setText(_translate("Form", "DIETAS"))
-        self.label_dicas_tela_inicial_2.setText(_translate("Form", "DICAS"))
+        # self.label_dicas_tela_inicial.setText(_translate("Form", "DIETAS"))
+        # self.label_dicas_tela_inicial_2.setText(_translate("Form", "DICAS"))
         self.label_3.setText(_translate("Form", "O que é necessário para ter uma boa saúde?"))
         self.label_textodicas.setText(_translate("Form", "Manter boa saúde é objetivo de vida para muitas pessoas. Mas para que isso aconteça de forma perene é necessário adotar cuidados diários. Pequenas mudanças fazem toda a diferença nesse processo."))
         self.label_4.setText(_translate("Form", "Veja alguns\n"

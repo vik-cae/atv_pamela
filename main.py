@@ -17,9 +17,6 @@ class nutricionista(QMainWindow):
         altura = float(self.ui.lineEdit_altura.text())
         
 
-    
-
-
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     window = nutricionista()

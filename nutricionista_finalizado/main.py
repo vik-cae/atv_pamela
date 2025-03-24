@@ -39,7 +39,7 @@ class JanelaFinalizada(QMainWindow):
             self.ui.label_onda: "./imagens/onda-meio.png",
             self.ui.label_vector_linhas: "./imagens/Group 20.png",
             self.ui.label_vector_linhas_2: "./imagens/Group 20.png",
-            #self.ui.label_card_primeiro: "./imagens/Group 18.png",
+            self.ui.label: "./imagens/Group 18.png",
         }
         for label, img_path in imagens.items():
             label.setPixmap(QPixmap(img_path))

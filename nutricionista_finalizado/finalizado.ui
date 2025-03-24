@@ -14,14 +14,6 @@
    <string>Form</string>
   </property>
   <widget class="QScrollArea" name="scrollArea">
-   <property name="geometry">
-    <rect>
-     <x>80</x>
-     <y>10</y>
-     <width>901</width>
-     <height>801</height>
-    </rect>
-   </property>
    <property name="horizontalScrollBarPolicy">
     <enum>Qt::ScrollBarAlwaysOn</enum>
    </property>
@@ -31,7 +23,7 @@
    <widget class="QWidget" name="scrollAreaWidgetContents">
     <property name="geometry">
      <rect>
-      <x>-1</x>
+      <x>0</x>
       <y>0</y>
       <width>900</width>
       <height>1627</height>
@@ -251,6 +243,11 @@
           <width>141</width>
           <height>101</height>
          </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>24</pointsize>
+         </font>
         </property>
         <property name="text">
          <string/>

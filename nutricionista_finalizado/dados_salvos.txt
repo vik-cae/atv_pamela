@@ -38,3 +38,4 @@ Nome: a, Idade: 50, Peso: 80.0, Altura: 170.0
 Nome: a, Idade: 50, Peso: 80.0, Altura: 170.0
 Nome: GAbriel, Idade: 22, Peso: 55.0, Altura: 170.0
 Nome: a, Idade: 25, Peso: 80.0, Altura: 168.0
+Nome: www, Idade: 55, Peso: 90.0, Altura: 1.75

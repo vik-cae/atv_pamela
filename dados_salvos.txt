@@ -32,3 +32,5 @@ Nome: vi, Idade: 19, Peso: 75.0, Altura: 1.6
 Nome: vvv, Idade: 44, Peso: 55.0, Altura: 1.6
 Nome: sssss, Idade: 22, Peso: 55.0, Altura: 1.7
 Nome: vitoria, Idade: 18, Peso: 70.0, Altura: 1.8
+Nome: ifdshvgsel, Idade: 45, Peso: 120.0, Altura: 1.9
+Nome: jnnnnn, Idade: 45, Peso: 120.0, Altura: 1.8

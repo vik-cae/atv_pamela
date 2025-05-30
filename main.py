@@ -29,7 +29,7 @@ class JanelaFinalizada(QMainWindow):
         """ Define as imagens nos QLabel da interface """
         imagens = {
             self.ui.label_card: "./imagens/card-suco.png",
-            self.ui.label_card_2: "./imagens/card-salda.png",
+            self.ui.label_card_2: "./imagens/card-pepino.png",
             self.ui.label_vector_circulo: "./imagens/circulo-verde.png",
             self.ui.label_vector_2: "./imagens/direita-vector.png",
             self.ui.label_vector: "./imagens/esquerda-vector.png",

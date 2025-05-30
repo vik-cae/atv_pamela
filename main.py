@@ -87,7 +87,7 @@ class JanelaLogin(QMainWindow):
         self.janela_finalizada = JanelaFinalizada(peso, altura)
         self.janela_finalizada.show()
 
-        # Fechar a tela de login
+        # Fechar a tela de logins
         self.close()
 
 

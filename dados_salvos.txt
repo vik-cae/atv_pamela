@@ -1,2 +1,4 @@
 Nome: fffff, Idade: 15, Peso: 45.0, Altura: 1.5
 Nome: cccccc, Idade: 30, Peso: 85.0, Altura: 1.8
+Nome: vivi, Idade: 18, Peso: 85.0, Altura: 1.9
+Nome: vitoria, Idade: 45, Peso: 85.0, Altura: 1.7
